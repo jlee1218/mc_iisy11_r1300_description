@@ -1,10 +1,10 @@
 <?xml version="1.0"?>
 <?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
 <package format="3">
-  <name>iisy11_model</name>
+  <name>mc_iisy11_r1300_description</name>
   <version>0.0.0</version>
-  <description>TODO: Package description</description>
-  <maintainer email="jeffrey@todo.todo">jeffrey</maintainer>
+  <description>The mc_iisy11_r1300_description package</description>
+  <maintainer email="chj3lee@uwaterloo.ca">Jeffrey Lee</maintainer>
   <license>TODO: License declaration</license>
 
   <buildtool_depend>ament_cmake</buildtool_depend>
