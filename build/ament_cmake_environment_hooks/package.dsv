@@ -1,0 +1,4 @@
+source;share/mc_iisy11_r1300_description/local_setup.bash
+source;share/mc_iisy11_r1300_description/local_setup.dsv
+source;share/mc_iisy11_r1300_description/local_setup.sh
+source;share/mc_iisy11_r1300_description/local_setup.zsh
