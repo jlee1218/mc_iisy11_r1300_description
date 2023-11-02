@@ -16,7 +16,10 @@ export robot_desc_name="iisy11_r1300_description"
 export target_pkg_name="mc_${robot_name}_description"
 
 # export org_path=`rospack find ${robot_desc_name}`       # original robot_description package path (assuming this has dae mesh files)
-export org_path=`ros2 pkg prefix ${target_pkg_name}`  #Requires current package to be built first. This dependency can be fixed once we change the dependency back to kroshu's repo
+# export org_path=`ros2 pkg prefix ${target_pkg_name}`  #Requires current package to be built first. This dependency can be fixed once we change the dependency back to kroshu's repo
+
+export org_path="/home/jeffrey/catkin_ws/src/mc_iisy11_r1300_description"    #TEMP SOLUTION
+
 
 export tmp_path="/tmp/generate_${target_pkg_name}"      # tmp_path were the files are generated
 export gen_path="/tmp/${target_pkg_name}"               # path were the robot_description package gets generated
@@ -29,8 +32,8 @@ function generate_convexes()
 {
     # List target mesh files
     # daefiles=`find ${org_path}/meshes/ur5e/ -type f -regex ".*dae$"` # exclude * .dae because they are duplicate with stl files
-    # stlfiles=`find ${org_path}/meshes/LBRiisy11R1300/ -type f -regex ".*stl$"`
-    stlfiles=`find ${org_path}/share/${target_pkg_name}/meshes/LBRiisy11R1300/ -type f -regex ".*stl$"`
+    stlfiles=`find ${org_path}/meshes/LBRiisy11R1300/collision/ -type f -regex ".*stl$"`
+    # stlfiles=`find ${org_path}/share/${target_pkg_name}/meshes/LBRiisy11R1300/ -type f -regex ".*stl$"`
     targets="${daefiles} ${stlfiles}"
     echo ${targets}
 
